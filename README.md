@@ -21,3 +21,5 @@ In the end the samples are binary classified with a sigmoid activation function.
 
 
 <img src="static/Lstm_unit.png" alt="Image" width="600"/>
+
+The application has to be deployed, probably after collecting more data and realizing a deeper model, maybe considering transformers.
