@@ -20,4 +20,4 @@ The [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) layer, preceded
 In the end the samples are binary classified with a sigmoid activation function.
 
 
-<img src="static/Lstm_unit.png" alt="Image" width="200"/>
+<img src="static/Lstm_unit.png" alt="Image" width="600"/>
