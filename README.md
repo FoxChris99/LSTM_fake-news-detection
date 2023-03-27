@@ -1,5 +1,5 @@
 # LSTM fake-news-detection
-Simple flask web application for fake news detection that uses a Long Short-Term Memory (LSTM) neural network trained with TensorFlow Keras.
+Simple flask web application for fake news detection that uses a Long Short-Term Memory (LSTM) neural network.
 
 | Layers              |       units/params     |
 |---------------------|:----------------------:|
