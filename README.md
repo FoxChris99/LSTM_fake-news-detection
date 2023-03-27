@@ -15,5 +15,5 @@ The embedding layer takes as input the encoded sequences and converts them into 
 The [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) layer, preceded by [SpatialDropout](https://keras.io/api/layers/regularization_layers/spatial_dropout1d/), is a type of recurrent neural network that is able to capture long-term dependencies in sequential data.
 In the end the samples are binary classified with a sigmoid activation function.
 
-![](static/Lstm_unit.png)
+![](static/web_ui.png)
 
