@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>AI fake news detection</title>
+  <style>
+    .large-input {
+      width: 300px;
+      height: 50px;
+      vertical-align: middle;
+      padding-bottom: 0px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      html,
+      body,
+      div.background {
+        height: 100%;
+      }
+      
+      div.background {
+        background: url(../static/Neural.jpg) repeat;
+        border: 2px solid black;
+        background-size: cover;
+      }
+      
+
+      div.transbox p {
+        margin: 0%;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    </style>
+    </head>
+
+    <body>
+    <div class="background">
+      <div class="transbox">
+      </body>
+
+  <h1 style="text-align:center;"><font color="Dark Orange">Fake News detection AI</font></h1>
+  <hr>
+  <br>
+  <h2 style="text-align:center;"><font color="Orange">Enter the text of a news or an article</font></h2>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <form method="POST" action="/predict">
+          <div class="form-group" style="text-align:center;">
+            <label for="detect-text"><p class="font-weight-bold" >Insert text here:</p></label>
+            <input type="text" class="large-input" name="INPUT-text">
+            <small id="insert-text-help" class="form-text text-muted">Up to 250 words</small>
+          </div>
+
+          <div class="form-group text-center">
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        
+        </form>
+
+        {% if result %}
+        <div class="card" style="margin:0 auto;text-align:center;">
+            <div class="card-body">
+                {% if result < 50 %}
+                    <p><h1><font color="Lime">The news has a {{100- result }}% probability of being Real</font></h1></p>
+                {% else %}
+                    <p><h1><font color="red">The news has a {{ result }}% probability of being Fake</font></h1></p>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+
+
+
+        <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
