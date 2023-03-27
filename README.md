@@ -20,6 +20,6 @@ The [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) layer, preceded
 In the end the samples are binary classified with a sigmoid activation function.
 
 
-<img src="static/Lstm_unit.png" alt="Image" width="400"/>
+<img src="static/Lstm_unit.png" alt="Image" width="500"/>
 
 The application has to be deployed, probably after having collected more data and realized a deeper model (maybe considering also transformers).
