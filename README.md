@@ -4,7 +4,7 @@ Simple flask web application for fake news detection that uses a shallow Long Sh
 | Layers              |       units/params     |
 |---------------------|:----------------------:|
 | Input               |                        |
-| Embedding           |      50.0000/100/250   |
+| Embedding           |      50.000/100/250   |
 | SpatialDropout1D    |           0.2          |
 | LSTM layer          |           100          | 
 | Output(sigmoid)     |            1           |
